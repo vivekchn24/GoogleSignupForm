@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+<link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="demo"></p>
+   <header>
+    <div class="container">
+        <div class="left">
+            <div class="g-form">
+                <img src="images/googlelogoimage.jpeg" width="70">
+                <h3>Create Your Google Account</h3>
+                <form >
+                    <input type="text" name="fname" placeholder="First Name" id="fname" required>
+                    <input type="text" name="lname" placeholder="Last Name" id=lfname" required>
+
+                    <div id="uname">
+                    
+                    <input type="email" name="mail" placeholder="Email Id" required>
+                    <label>
+                        @gmail.com
+                    </label>
+
+                </div>
+
+                    <span>
+                        You Can Use Letters,Numbers & Periods
+                    </span>
+                    <br>
+                    <a href="#">Use My Current Email Address Instead</a><br>
+                    <input type="password" name="Password" placeholder="Password" id="pwrd" required>
+                    <input type="password" name="Confirm Password" placeholder="Confirm Password" id="cpwrd" required>
+
+                    <span>
+                        Use 8  or more characters with a mix of letters,numbers & symbols
+                    </span>
+                    <br>
+                    <input type="checkbox" name="" class="checkbox" onclick="validate()">
+                    &nbsp;Show Password
+
+                    <div class="b-links">
+                        <a href="#">Sign In Instead</a>
+                        <input type="submit" id="next" value="Next">
+                    </div>
+                </form>
+            </div>
+        </div>
+       <div class="right">
+        <img src="images/createimagelogo.jpg">
+        <p>
+            One Account.All Of Google Working For You.
+        </p>
+       </div>
+    </div>
+   </header> 
+
+   <script type="text/javascript">
+
+  window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = Math.random();
+});
+    
+    function validate() { 
+        document.getElementById("uname").style.color = "blue"; 
+        var pwrd = document.getElementById("pwrd");
+        var cpwrd = document.getElementById("cpwrd");
+if(pwrd.type==="password" && cpwrd.type==="password")
+{
+    pwrd.type="text";
+    cpwrd.type="text";
+}
+else
+{
+    pwrd.type="password";
+    cpwrd.type="password";
+}
+
+    }
+
+   </script>
+</body>
+</html>
