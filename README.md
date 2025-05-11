@@ -19,6 +19,7 @@ The purpose of this project is to replicate the design and layout of Google's Si
 --->>
 
 ## 📂 Project Files Structure
+
 ├── index.html # Main HTML file (form structure)
 ├── style.css # CSS for styling the form
 └── script.js # JavaScript for form validation
@@ -41,6 +42,7 @@ The purpose of this project is to replicate the design and layout of Google's Si
 
 ## 🖼️ Preview
 -Download Attached File Check It Out
+
 --->>
 
 ## 🚀 How to Use
